@@ -1,3 +1,82 @@
 body {
-    background-color: aqua;
+    margin: 0;
+    background-color: rgb(204, 180, 157);
+    text-align: center;
+    font-family: 'Indie Flower', cursive;
+}
+
+body h1 {
+    margin: 0;
+    padding: 20px;
+    font-family: 'Sigmar One', cursive;
+    background-color: rgb(252, 225, 199);
+    border-bottom: 3px solid gray;
+}
+
+#pie-cards {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.pies {
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    padding-bottom: 0;
+    margin: 20px;
+    width: 350px;
+    border: 2px solid black;
+    border-radius: 10px;
+    text-align: center;
+    background-color: blanchedalmond;
+    box-shadow: 4px 4px rgb(100, 100, 100);
+}
+
+.pies header {
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: underline grey;
+}
+
+.pies img {
+    width: 300px;
+    border: 1px solid black;
+    border-radius: 10px;
+    align-self: center;
+    box-shadow: 3px 3px grey;
+}
+
+.pies p {
+    margin: 10px;
+    padding: 5px;
+    align-self: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.price {
+    padding: 0;
+    background-color: grey;
+    border-radius: 20px;
+    width: 150px;
+    box-shadow: 3px 3px rgb(94, 93, 93);
+}
+
+p.available {
+    margin: 10px 0 20px;
+    border-radius: 15px;
+    background-color: green;
+    box-shadow: 2px 2px rgb(2, 87, 2);
+    width: 125px;
+    color: white;
+}
+
+p.notAvailable {
+    margin: 10px 0 20px;
+    border-radius: 15px;
+    background-color: red;
+    box-shadow: 2px 2px rgb(161, 2, 2);
+    width: 125px;
+    color: white;
 }
