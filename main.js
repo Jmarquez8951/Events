@@ -140,10 +140,17 @@ const findMyPies = (e) => {
     }  
 };
 
-
-pieBuilder(pies);
+const events = () => {
 document.getElementById('Zoe').addEventListener('click', findMyPies);
 document.getElementById('Mary').addEventListener('click', findMyPies);
 document.getElementById('Luke').addEventListener('click', findMyPies);
 document.getElementById('Jose').addEventListener('click', findMyPies);
 document.getElementById('All').addEventListener('click', findMyPies);
+};
+
+const init = () => {
+    pieBuilder(pies);
+    events();
+};
+
+init();
