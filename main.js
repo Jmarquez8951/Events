@@ -127,13 +127,17 @@ const pieBuilder = (monkeybuttArray) => {
 
 const findMyPies = (e) => {
     const buttonId = e.target.id;
-    const myPies = [];
-    for (let i = 0; i < pies.length; i++){
-        if (pies[i].instructor === buttonId){
-            myPies.push(pies[i]);
+    if (buttonId === 'All'){
+        pieBuilder(pies);
+    } else {
+        const myPies = [];
+        for (let i = 0; i < pies.length; i++){
+            if (pies[i].instructor === buttonId){
+                myPies.push(pies[i]);
+            }
         }
-    }
-    pieBuilder(myPies);
+        pieBuilder(myPies);
+    }  
 };
 
 
